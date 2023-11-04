@@ -84,6 +84,21 @@ p {
   text-transform: uppercase;
   color: #4d5ae5;
 }
+.small-text {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.64px;
+}
+.medium-text {
+  font-weight: 500;
+  letter-spacing: 0.32px;
+}
+.link {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.64px;
+  text-decoration: underline;
+}
 
 .container {
   max-width: 1440px;
@@ -215,11 +230,7 @@ p {
   margin: 0 auto 48px auto;
   color: #fff;
 }
-.hero-btn {
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  margin: 0 auto;
+.btn {
   padding: 16px 32px;
   letter-spacing: 0.64px;
   font-weight: 500;
@@ -230,6 +241,13 @@ p {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+
+.hero-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -371,7 +389,9 @@ p {
   max-width: 264px;
   color: #f4f4fd;
 }
-
+.social-media {
+  margin-right: 80px;
+}
 .social-title {
   margin-bottom: 16px;
   font-weight: 500;
@@ -396,4 +416,152 @@ p {
 .hover-green:hover,
 .hover-green:focus {
   background-color: #31d0aa;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+.form-input {
+  width: 264px;
+  padding: 8px 16px;
+  margin-right: 24px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.48px;
+  color: #fff;
+  background-color: #2e2f42;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.form-btn {
+  position: relative;
+  width: 164px;
+  text-align: left;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  color: #fff;
+  border: none;
+}
+.icon-btn {
+  position: absolute;
+  top: 6px;
+  right: 26px;
+}
+/* modal form */
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+}
+
+/* The Modal (background) */
+.modal {
+  /* display: none;  */ /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden;
+  background: rgba(46, 47, 66, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  position: absolute;
+  padding: 24px;
+  width: 408px;
+  height: 584px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  border: 1px solid #888;
+}
+
+/* The Close Button */
+.btn-close {
+  display: flex;
+  align-self: flex-end;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-form p {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.modal-form label {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.modal-form-input {
+  padding: 3px 16px 3px 34px;
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+.use-icon {
+  fill: #2e2f42;
+}
+.modal-form-input:focus {
+  outline-color: #4d5ae5;
+}
+
+.use-icon:hover {
+  fill: #4d5ae5;
+}
+.modal-form-textarea {
+  padding: 3px 16px;
+  margin-bottom: 16px;
+  width: 360px;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+.modal-form-textarea:focus {
+  outline-color: #4d5ae5;
+}
+.form-checkbox {
+  margin-right: 8px;
+  vertical-align: baseline;
+}
+
+.btn-send {
+  margin-top: 24px;
+  align-self: center;
+  width: 169px;
+}
+
+/* icon svg input */
+.modal-form label {
+  position: relative;
+}
+
+.icon-input {
+  position: absolute;
+  left: 16px;
+  top: 36px;
+  width: 16px;
+  height: 16px;
+  /*  color: #2e2f42; */
+  z-index: 5;
 }
