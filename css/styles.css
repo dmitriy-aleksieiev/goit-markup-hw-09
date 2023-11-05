@@ -581,7 +581,7 @@ p {
   fill: #4d5ae5;
 }
 .modal-form-textarea {
-  padding: 3px 16px;
+  padding: 8px 16px;
   /* margin-bottom: 16px; */
   height: 120px;
   resize: none;
