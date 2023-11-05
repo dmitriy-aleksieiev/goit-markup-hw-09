@@ -611,6 +611,7 @@ p {
   border: none;
 }
 .btn-send {
+  min-width: 169px;
   display: block;
   margin-top: 24px;
   align-self: center;
