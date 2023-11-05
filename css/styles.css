@@ -86,7 +86,7 @@ p {
 }
 .small-text {
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.64px;
 }
 .medium-text {
@@ -473,15 +473,20 @@ p {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/*  fill icon using svg use */
+.use-icon {
+  fill: inherit;
+}
 /* Modal Content/Box */
 .modal-content {
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 72px 24px 24px 24px;
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -520,13 +525,17 @@ p {
   text-decoration: none;
   cursor: pointer;
 }
-.modal-form p {
-  margin-top: 24px;
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-title {
   margin-bottom: 16px;
   text-align: center;
 }
-.modal-form label {
-  margin-top: 8px;
+.modal-form-label {
+  color: #8e8f99;
+  display: block;
   margin-bottom: 4px;
 }
 /* icon svg input */
@@ -539,6 +548,7 @@ p {
 }
 .modal-form-input,
 .modal-form-textarea {
+  margin-bottom: 8px;
   width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -562,23 +572,40 @@ p {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*  fill icon using svg use */
-.use-icon {
-  fill: #2e2f42;
-}
 .modal-form-textarea {
   padding: 3px 16px;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   height: 120px;
   resize: none;
 }
-.form-checkbox {
-  margin-right: 8px;
-  vertical-align: baseline;
-}
 
+/* The container */
+.form-checkbox {
+  margin-bottom: 24px;
+}
+/* Create a custom checkbox */
+.form-label-span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  fill: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-checkbox:checked ~ .form-label-span {
+  background-color: #4d5ae5;
+  fill: #F4F4FD;
+  border: none;
+}
 .btn-send {
+  display: block;
   margin-top: 24px;
   align-self: center;
   width: 169px;
+  height: 56px;
 }
