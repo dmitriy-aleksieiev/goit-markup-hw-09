@@ -546,87 +546,89 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="form-btn" type="submit">Subscribe
+            <button class="form-btn" type="submit">
+              Subscribe
               <svg class="icon-btn" width="24" height="24">
                 <use href="./images/icons.svg#icon-plane"></use>
               </svg>
             </button>
-
           </form>
         </div>
       </div>
     </footer>
     <div id="myModal" class="modal">
-      <form class="modal-form modal-content" action="index.html">
-        <button id="close" class="btn-close" type="button">
-          <svg class="icon-svg" width="8" height="8">
-            <use class="use-icon" href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="medium-text mb-16">
-          Leave your contacts and we will call you back
-        </p>
-        <label class="form-label" for="user-name"> Name </label>
-        <div class="input-with-icon">
-          <input
-            id="user-name"
-            class="modal-form-input"
-            type="text"
-            name="user-name"
-            placeholder="Enter username"
-            autofocus
-          />
-          <svg class="icon-input" width="18" height="24">
-            <use class="use-icon" href="./images/icons.svg#icon-person"></use>
-          </svg>
-        </div>
-        <label for="phone">Phone </label>
-        <div class="input-with-icon">
-          <input
-            id="phone"
-            class="modal-form-input"
-            type="tel"
-            name="phone"
-            placeholder="Enter phone"
-          />
-          <svg class="icon-input" width="18" height="24">
-            <use class="use-icon" href="./images/icons.svg#icon-phone"></use>
-          </svg>
-        </div>
-        <label for="email"> Email </label>
-        <div class="input-with-icon">
-          <input
-            id="email"
-            class="modal-form-input"
-            type="email"
-            name="email"
-            placeholder="Enter E-mail"
-          />
-          <svg class="icon-input" width="18" height="24">
-            <use class="use-icon" href="./images/icons.svg#icon-email"></use>
-          </svg>
-        </div>
-        <label for="comments">Comments</label>
-        <textarea
-          id="comments"
-          class="modal-form-textarea"
-          name="comments"
-          placeholder="Enter your comments"
-          rows="2"
-        >
-        </textarea>
-        <label class="small-text" for="policy">
-          <input
-            class="form-checkbox small-text"
-            type="checkbox"
-            name="policy"
-            id="policy"
-          />
-          I accept the terms and conditions of the
-          <a class="link" href="#">Privacy Policy</a>
-        </label>
-        <button class="btn btn-send" type="button">Send</button>
-      </form>
+      <div class="modal-content">
+        <form class="modal-form" action="index.html">
+          <button id="close" class="btn-close" type="button">
+            <svg class="icon-svg" width="8" height="8">
+              <use class="use-icon" href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <p class="medium-text mb-16">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="form-label" for="user-name"> Name </label>
+          <div class="input-with-icon">
+            <input
+              id="user-name"
+              class="modal-form-input"
+              type="text"
+              name="user-name"
+              placeholder="Enter username"
+              autofocus
+            />
+            <svg class="icon-input" width="18" height="24">
+              <use class="use-icon" href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label for="phone">Phone </label>
+          <div class="input-with-icon">
+            <input
+              id="phone"
+              class="modal-form-input"
+              type="tel"
+              name="phone"
+              placeholder="Enter phone"
+            />
+            <svg class="icon-input" width="18" height="24">
+              <use class="use-icon" href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label for="email"> Email </label>
+          <div class="input-with-icon">
+            <input
+              id="email"
+              class="modal-form-input"
+              type="email"
+              name="email"
+              placeholder="Enter E-mail"
+            />
+            <svg class="icon-input" width="18" height="24">
+              <use class="use-icon" href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <label for="comments">Comments</label>
+          <textarea
+            id="comments"
+            class="modal-form-textarea"
+            name="comments"
+            placeholder="Enter your comments"
+            rows="2"
+          >
+          </textarea>
+          <label class="small-text" for="policy">
+            <input
+              class="form-checkbox small-text"
+              type="checkbox"
+              name="policy"
+              id="policy"
+            />
+            I accept the terms and conditions of the
+            <a class="link" href="#">Privacy Policy</a>
+          </label>
+          <button class="btn btn-send" type="button">Send</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
