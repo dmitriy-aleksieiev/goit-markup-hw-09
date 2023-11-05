@@ -601,6 +601,9 @@ p {
   letter-spacing: 0.04em; 
   color: #8e8f99;
 }
+.form-label-checkbox {
+  letter-spacing: 0.04em; 
+}
 /* Create a custom checkbox */
 .form-label-span {
   display: inline-flex;
