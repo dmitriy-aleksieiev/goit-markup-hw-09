@@ -528,13 +528,15 @@ p {
 .btn-close:focus .icon-svg {
   fill: #fff;
 }
-.modal-form {
+.form-div {
   display: flex;
   flex-direction: column;
+  margin-bottom: 8px;
 }
 .modal-title {
   margin-bottom: 16px;
   text-align: center;
+  color: #2e2f42;
 }
 .modal-form-label {
   color: #8e8f99;
