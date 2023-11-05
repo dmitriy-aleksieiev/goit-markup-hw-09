@@ -542,6 +542,7 @@ p {
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
+  letter-spacing: 0.04em;
 }
 /* icon svg input */
 .input-with-icon {
