@@ -254,7 +254,9 @@ p {
   margin: 0 auto;
 }
 .hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:focus,
+.btn:hover,
+.btn:focus {
   background-color: #404bbf;
 }
 .second-section-list {
