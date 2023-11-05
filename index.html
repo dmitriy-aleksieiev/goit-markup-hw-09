@@ -536,26 +536,28 @@
           </ul>
         </div>
         <div class="form-div">
-          <form class="subscribe" action="">
-            <label class="form-label" for="email"> Subscribe </label>
-            <input
-              class="form-input"
-              type="email"
-              name="email"
-              placeholder="E-mail"
-            />
-            <button class="form-btn" type="button">
-              Subscribe
+          <p class="form-title">Subscribe</p>
+          <form class="form-sub" action="index.html">
+            <label for="">
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="form-btn" type="submit">Subscribe
               <svg class="icon-btn" width="24" height="24">
                 <use href="./images/icons.svg#icon-plane"></use>
               </svg>
             </button>
+
           </form>
         </div>
       </div>
     </footer>
     <div id="myModal" class="modal">
-      <form class="modal-form modal-content" action="">
+      <form class="modal-form modal-content" action="index.html">
         <button id="close" class="btn-close" type="button">
           <svg class="icon-svg" width="8" height="8">
             <use class="use-icon" href="./images/icons.svg#icon-close"></use>
@@ -592,8 +594,9 @@
           </svg>
         </div>
         <label for="email"> Email </label>
-        <div id="email" class="input-with-icon">
+        <div class="input-with-icon">
           <input
+            id="email"
             class="modal-form-input"
             type="email"
             name="email"
