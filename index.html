@@ -60,7 +60,7 @@
           <h1 class="hero-title main-heading">
             Effective Solutions for Your Business
           </h1>
-          <button class="btn hero-btn" type="button">Order Service</button>
+          <button class="btn hero-btn" type="button" onclick="openModal()">Order Service</button>
         </div>
       </section>
       <section class="second-section">
@@ -549,19 +549,19 @@
             </label>
             <button class="form-btn" type="submit">
               Subscribe
-              <svg class="icon-btn" width="24" height="24">
-                <use href="./images/icons.svg#icon-plane"></use>
+              <svg class="icon-btn icon-svg" width="24" height="24">
+                <use class="use-icon" href="./images/icons.svg#icon-plane"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
-    <div id="myModal" class="modal">
+    <div id="modalWindow" class="modal is-close">
       <div class="modal-content">
-        <button id="close" class="btn-close" type="button">
+        <button id="close" class="btn-close" type="button" onclick="closeModal()">
           <svg class="icon-svg" width="8" height="8">
-            <use class="use-icon" href="./images/icons.svg#icon-close1"></use>
+            <use class="use-icon" href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="medium-text modal-title">
@@ -668,5 +668,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
