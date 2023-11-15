@@ -57,11 +57,13 @@ h2,
 h3 {
   color: var(--clr-slate-700);
   font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 h1,
 h2 {
   text-align: center;
+
 }
 
 a,
@@ -73,13 +75,11 @@ p {
   margin-bottom: 48px;
   font-size: 56px;
   line-height: 1.07; /* 107.143% */
-  letter-spacing: 1.12px;
 }
 .second-heading {
   margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.72px;
   text-transform: capitalize;
 }
 .third-heading {
@@ -87,7 +87,6 @@ p {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.2em;
 }
 .logo-typography {
   font-family: "Raleway", sans-serif;
@@ -253,6 +252,8 @@ p {
   height: 56px;
   margin: 0 auto;
 }
+.form-btn:hover,
+.form-btn :focus,
 .hero-btn:hover,
 .hero-btn:focus,
 .btn:hover,
@@ -473,9 +474,6 @@ p {
 /* Modal Content/Box */
 .modal-content {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 72px 24px 24px 24px;
   width: 408px;
@@ -523,11 +521,6 @@ p {
 .btn-close:hover .icon-svg,
 .btn-close:focus .icon-svg {
   fill: var(--clr-white);
-}
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8px;
 }
 .modal-title {
   margin-bottom: 16px;
@@ -586,8 +579,8 @@ p {
   color: rgba(46, 47, 66, 0.4);
 }
 .modal-form-textarea {
+  display: block;
   padding: 8px 16px;
-  /* margin-bottom: 16px; */
   height: 120px;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
@@ -628,10 +621,9 @@ p {
   color: var(--clr-primary-400);
 }
 .btn-send {
+  margin: 0 auto;
   min-width: 169px;
   display: block;
-  margin-top: 24px;
   align-self: center;
-  width: 169px;
   height: 56px;
 }
