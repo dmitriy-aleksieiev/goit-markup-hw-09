@@ -28,7 +28,7 @@
           >
           <ul class="header-menu">
             <li class="header-menu-li">
-              <a class="header-menu-link" href="./index.html">Studio</a>
+              <a class="header-menu-link current" href="./index.html">Studio</a>
             </li>
             <li class="header-menu-li">
               <a class="header-menu-link" href="">Portfolio</a>
@@ -60,7 +60,9 @@
           <h1 class="hero-title main-heading">
             Effective Solutions for Your Business
           </h1>
-          <button class="btn hero-btn" type="button" onclick="openModal()">Order Service</button>
+          <button class="btn hero-btn" type="button" onclick="openModal()">
+            Order Service
+          </button>
         </div>
       </section>
       <section class="second-section">
@@ -550,7 +552,10 @@
             <button class="form-btn" type="submit">
               Subscribe
               <svg class="icon-btn icon-svg" width="24" height="24">
-                <use class="use-icon" href="./images/icons.svg#icon-plane"></use>
+                <use
+                  class="use-icon"
+                  href="./images/icons.svg#icon-plane"
+                ></use>
               </svg>
             </button>
           </form>
@@ -559,7 +564,12 @@
     </footer>
     <div id="modalWindow" class="modal is-close">
       <div class="modal-content">
-        <button id="close" class="btn-close" type="button" onclick="closeModal()">
+        <button
+          id="close"
+          class="btn-close"
+          type="button"
+          onclick="closeModal()"
+        >
           <svg class="icon-svg" width="8" height="8">
             <use class="use-icon" href="./images/icons.svg#icon-close"></use>
           </svg>
