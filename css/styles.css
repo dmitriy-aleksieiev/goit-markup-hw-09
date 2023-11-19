@@ -513,7 +513,7 @@ p {
 }
 .btn-close:hover .icon-svg,
 .btn-close:focus .icon-svg {
-  fill: #fff;
+  fill: #ffffff;
 }
 .modal-title {
   margin-bottom: 16px;
