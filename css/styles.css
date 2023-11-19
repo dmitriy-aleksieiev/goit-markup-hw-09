@@ -63,7 +63,6 @@ h3 {
 h1,
 h2 {
   text-align: center;
-
 }
 
 a,
@@ -238,7 +237,7 @@ p {
   font-weight: 500;
   line-height: 1.5;
   color: var(--clr-white);
-  background-color: var(--clr-primary-400);
+  background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -494,7 +493,7 @@ p {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background-color: var(--clr-cornflower);
+  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -505,7 +504,7 @@ p {
 }
 .btn-close:hover,
 .btn-close:focus {
-  background-color: var(--clr-primary-500);
+  background-color: #404bbf;
   border: none;
   cursor: pointer;
 }
@@ -514,7 +513,7 @@ p {
 }
 .btn-close:hover .icon-svg,
 .btn-close:focus .icon-svg {
-  fill: var(--clr-white);
+  fill: #fff;
 }
 .modal-title {
   margin-bottom: 16px;
